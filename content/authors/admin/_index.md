@@ -1,77 +1,78 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Xiaojue Zhou
 
 # Is this the primary user of the site?
 superuser: true
 
-# Role/position/tagline
-role: Professor of Artificial Intelligence
+# Role/position
+role: Graduate student
 
-# Organizations/Affiliations to show in About widget
+# Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
+- name: University of California, Irvine
+  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: A graduate student studying how we understand about human actions and natural events. 
 
-# Interests to show in About widget
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Action Understanding
+- Neuroimaging
+- Cortical Networks
+- Human Cognition
+- Machine Learning
 
-# Education to show in About widget
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in Cognitive Neuroscience
+    institution: University of California, Irvine
+    year: 2018 - Current
+  - course: BS in Statistics (Honor) and Psychology
+    institution: University of Wisconsin, Madison
+    year: 2012 - 2016
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
+#   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
 - icon: envelope
   icon_pack: fas
-  link: '/#contact'
+  link: '/#contact'  # For a direct email link, use "zhouxiaojue22@gmail.com".
+- icon: instagram
+  icon_pack: fab
+  link: https://instagram.com/xiaojwe/
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/ZhouXiaojue
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=9i_gmf8AAAAJ&hl=en
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/
-
-# Link to a PDF of your resume/CV.
-# To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
-# and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: media/resume.pdf
+  link: https://github.com/zhouxiaojue
+# Link to a PDF of your resume/CV from the About widget.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+- icon: cv
+  icon_pack: ai
+  link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
+
+# Organizational groups that you belong to (for People widget)
+#   Set this to `[]` or comment out if you are not using People widget.
+user_groups:
+- Researchers
+- Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am currently a graduate student at University of California, Irvine working at visual perception and neuroimaging lab ([VPNL](https://vpnl.ss.uci.edu/ "Lab website")) with Prof. Emily Grossman. My main research interest is to how we understand someone else's action in a complex social environment through modeling action perception using fMRI data. I model fMRI data with tools such as machine learning and statistical models. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+During spare time, I have a lot of interests. Recently I am trying to make a perfectly sweet espresso and become Ping Pong master in VR. 
+

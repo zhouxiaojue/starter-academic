@@ -13,7 +13,7 @@
 #   Guide to color themes: https://wowchemy.com/docs/customization/#color-themes
 #   Browse the latest built-in font sets at https://github.com/wowchemy/wowchemy-hugo-modules/tree/master/wowchemy/themes/
 #   Browse user installed themes in `data/themes/`
-theme = "minimal"
+theme = "ocean"
 
 # Enable users to switch between day and night mode?
 day_night = true
@@ -62,11 +62,11 @@ highlight_languages = ["r"]  # Add support for highlighting additional languages
 
 # Enable LaTeX math rendering? true/false
 #   If false, you can enable math on a per page basis as needed.
-math = false
+math = true
 
 # Enable diagram rendering? true/false
 #   If false, you can enable diagrams on a per page basis as needed.
-diagram = false
+diagram = true
 
 # Privacy pack
 #   Show a cookie consent message to visitors
@@ -88,34 +88,34 @@ show_related = {book = true, page = false, post = true, project = true, publicat
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "test@example.org"
-phone = "888 888 88 88"
+email = "zhouxiaojue22 at gmail dot com"
+phone = ""
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "450 Serra Mall", city = "Stanford", region = "CA", postcode = "94305", country = "United States", country_code = "US"}
+#address = {street = "450 Serra Mall", city = "Stanford", region = "CA", postcode = "94305", country = "United States", country_code = "US"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "37.4275", longitude = "-122.1697"}
+#coordinates = {latitude = "37.4275", longitude = "-122.1697"}
 
 # Directions for visitors to locate you.
-directions = "Enter Building 1 and take the stairs to Office 200 on Floor 2"
+#directions = "Enter Building 1 and take the stairs to Office 200 on Floor 2"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
-office_hours = ["Monday 10:00 to 13:00", "Wednesday 09:00 to 10:00"]
+#office_hours = ["Monday 10:00 to 13:00", "Wednesday 09:00 to 10:00"]
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
-appointment_url = "https://calendly.com"
+#appointment_url = "https://calendly.com"
 
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
-  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Twitter"},
-  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
-  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
-  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
+  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/ZhouXiaojue"},
+  #{icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
+  #{icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
+  #{icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
   ]
 
@@ -147,7 +147,7 @@ address_format = "en-us"
 ############################
 
 # Main menu alignment (l = left, c = center, r = right) and logo options.
-main_menu = {align = "l", show_logo = true, highlight_active_link = true, show_language = false, show_day_night = true, show_search = true}
+main_menu = {enable = true, align = "l", show_logo = true, highlight_active_link = true, show_language = false, show_day_night = true, show_search = true}
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
@@ -200,15 +200,19 @@ plugins_js  = []
   publication_view = 2
   talk_view = 2
 
+# Breadcrumb navigation
+[breadcrumb]
+  page_types = {book = true}
+
 ############################
 ## Comments
 ############################
 [comments]
   # Comment provider:
-  #   0: Disabled
-  #   1: Disqus (https://disqus.com)
-  #   2: Commento (https://commento.io)
-  engine = 0
+  #   "": Disabled
+  #   "disqus": Disqus (https://disqus.com)
+  #   "commento": Commento (https://commento.io)
+  provider = ""
 
   # Which page types are commentable?
   commentable = {page = true, post = true, docs = true, project = true, publication = true, talk = true}
@@ -228,10 +232,10 @@ plugins_js  = []
 ############################
 [search]
   # Search provider:
-  #   0: No search engine
-  #   1: Academic (built-in)
-  #   2: Algolia (https://www.algolia.com)
-  engine = 1
+  #   "": No search engine
+  #   "wowchemy": Built-in search engine
+  #   "algolia": Algolia (https://www.algolia.com)
+  provider = "wowchemy"
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.
@@ -255,11 +259,11 @@ plugins_js  = []
   #   https://www.mapbox.com/studio/account/tokens
   #
   # Map provider:
-  #   0: No map
-  #   1: Google Maps
-  #   2: OpenStreetMap (Mapnik)
-  #   3: OpenStreetMap (Mapbox)
-  engine = 2
+  #   "": No map
+  #   "google": Google Maps
+  #   "mapnik": OpenStreetMap (Mapnik)
+  #   "mapbox": OpenStreetMap (Mapbox)
+  provider = "mapnik"
   api_key = ""
   zoom = 15
 
@@ -267,15 +271,16 @@ plugins_js  = []
 ## Marketing
 ############################
 [marketing]
-  google_analytics = ""
-  google_tag_manager = ""
+  google_analytics = "UA-103033924-1"
+  google_tag_manager = "GTM-5MRX47L"
+  google_site_verification = "5fcRWVderxsmM_XIuK7Xxy7ZBDgdOM_712s35bh-V9U"
 
 ############################
 ## Content Management System
 ############################
 [cms]
-  # See https://wowchemy.com/docs/install/
-  netlify_cms = true
+  branch = "master"
+  local_backend = false
 
 ############################
 ## Icon Pack Extensions
